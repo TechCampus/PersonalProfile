@@ -1,0 +1,142 @@
+body,html{
+	font-size:16px;
+    background-color: #1380b8;
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+p,label{
+	color:#333;
+	font-size:14px;
+}
+h1,h2,h3,h4,h5,h6{
+	color:#000;
+}
+.dflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.dcol{
+    flex: 1;
+}
+.username{
+    font-size: 38px;
+    font-weight: bold;
+    color: #fff;
+    margin: 4px 0;
+}
+.desg{
+    font-size: 20px;
+    color: #fff;
+}
+.desc{
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    padding: 0 115px;
+}
+.socialico{
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+.socialico li{
+    display: inline-block;
+    float: left;
+    padding: 0 5px;
+}
+.btncss{
+    font-size: 14px;
+    outline: none;
+    border: 0;
+    height: 40px;
+    text-align: center;
+    padding: 0 25px;
+    border-radius: 25px;
+    background: transparent;
+    text-transform: uppercase;    
+}
+.hirebtn{
+    background-color: #000;
+    color: #fff;
+}
+.resumebtn{
+    margin: 0 5px;
+    color: #999;
+    border: 1px solid #999;
+}
+.profileblk .container-fluid{
+    padding: 0;
+}
+.ht100{
+    height: 100%;
+}
+.nomargin{
+    margin: 0;
+}
+.nopadding{
+    padding: 0;
+}
+.userbg{
+    background-image: url(../images/yaser.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.flexblk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.copytext{
+    position: absolute;
+    bottom: 15px;
+    color: #eee;
+}
+.socialico:before,.socialico:after{
+    content: '';
+    display: table;
+}
+.socialico:after{
+    clear: both;
+}
+.userimg_mob{
+    margin: 0 auto;
+}
+@media only screen and (max-width: 767px) {
+    .flexblk{
+        display: block !important;
+        text-align: center;
+        margin-top: 20px;
+        padding: 0px;
+    }
+    .desc{
+        padding: 0 20px !important;
+        font-size: 14px !important;
+    }
+    .username {
+    font-size: 22px !important;
+    }
+    .dflex{
+        display: block !important;
+    }
+    .desg {
+    font-size: 16px !important;
+    }
+    .socialico li{
+        float: none;
+    }
+    .copytext{
+        position: relative;
+        bottom: auto;
+        text-align: center;
+        padding-top: 10px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1115px) {
+    .desc{
+        padding: 0 55px !important;
+    }
+}
